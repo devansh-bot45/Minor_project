@@ -1,0 +1,13 @@
+# Core backend (prediction, sessions, history, CSV/PDF export). Tested with Python 3.11.
+flask>=3.0,<4
+flask-cors>=4.0
+python-dotenv>=1.0
+tensorflow>=2.16,<3      # includes Keras 3, needed to load har_model.keras
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn==1.8.0      # same version that pickled scaler.pkl / label_encoder.pkl
+fpdf2>=2.7
+
+# Tests
+pytest>=8

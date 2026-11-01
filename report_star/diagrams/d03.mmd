@@ -1,0 +1,8 @@
+flowchart TD
+    A["Phone browser<br/>(accelerometer and gyroscope)"] --> B["React frontend<br/>(20 Hz, 3-second windows)"]
+    B -->|"POST /api/predict"| C["Flask backend API"]
+    C --> D["Shared preprocessing"]
+    D --> E["Conv1D + BiLSTM + attention model"]
+    E --> F["Rules and session smoothing"]
+    F --> G["SQLite database<br/>(sessions, predictions)"]
+    F -->|"JSON prediction"| H["Dashboard display"]

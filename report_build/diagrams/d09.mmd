@@ -1,0 +1,10 @@
+flowchart TD
+    A["User opens AI Reports tab<br/>(only if the cloud module is enabled)"] --> B{"JWT stored<br/>in browser?"}
+    B -->|"Yes"| C["Show reports"]
+    B -->|"No"| E["Sign in with Google<br/>(popup returns access_token)"]
+    E --> G["POST /api/auth/google"]
+    G --> H{"Token valid<br/>(Google userinfo API)?"}
+    H -->|"No"| J["Return 401"]
+    H -->|"Yes"| K["Create or find user in MongoDB,<br/>issue JWT (7 days, HS256)"]
+    K --> N["Store token in browser"]
+    N --> C

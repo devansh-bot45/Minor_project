@@ -1,0 +1,5 @@
+flowchart TD
+    A["Input window (60 × 8)"] --> B["Convolutional Feature Extraction<br/>(Conv1D + Batch Normalisation<br/>+ Max Pooling, 3 blocks) → 7 × 256"]
+    B --> C["BiLSTM (128) + Temporal Attention<br/>→ BiLSTM (64)"]
+    C --> D["Fully Connected Classification Layers<br/>(Dense 128 and 64 with<br/>Batch Normalisation and Dropout)"]
+    D --> E["Softmax – 6 Activity Classes"]

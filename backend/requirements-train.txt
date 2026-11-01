@@ -1,0 +1,4 @@
+# OPTIONAL: data preparation and training (prepare_data.py, train_model.py)
+-r requirements.txt
+matplotlib
+seaborn

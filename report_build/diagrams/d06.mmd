@@ -1,0 +1,15 @@
+graph TD
+    U["User"] -->|"1. Start session"| P1["1.0 Session<br/>management"]
+    P1 -->|"Create / end session"| D1["Sessions store (SQLite)"]
+
+    U -->|"2. Sensor window (60x6)"| P2["2.0 Prediction<br/>process"]
+    P2 -->|"Raw window"| P3["2.1 Shared<br/>preprocessing"]
+    P3 -->|"8-channel window"| P4["2.2 Model<br/>inference"]
+    P4 -->|"Probabilities"| P5["2.3 Rules and<br/>session smoothing"]
+    P5 -->|"Prediction"| U
+    P5 -->|"Prediction record"| D2["Predictions store (SQLite)"]
+
+    U -->|"3. View history / export"| P6["3.0 History and<br/>reports"]
+    P6 -->|"Read"| D1
+    P6 -->|"Read"| D2
+    P6 -->|"Timeline, CSV, PDF"| U

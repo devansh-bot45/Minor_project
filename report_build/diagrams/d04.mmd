@@ -1,0 +1,9 @@
+flowchart TD
+    A["Phone browser: DeviceMotion API<br/>(or replay of a stored recording)"] --> B["Frontend (React): useSensorStream,<br/>20 Hz, 60-sample window every 1.5 s"]
+    B -->|"POST /api/predict, 60 x 6 JSON"| C["Backend (Flask API): validation,<br/>sessions, CSV upload, exports"]
+    C --> D["Shared preprocessing<br/>(same function as training)"]
+    D --> E["Conv1D + BiLSTM + attention<br/>backend/model_v2 (default)"]
+    E --> F["Rules and per-session smoothing"]
+    F -->|"JSON prediction"| G["Frontend views: Live, Analyse CSV,<br/>History, Model"]
+    C --> H[("SQLite: sessions, predictions")]
+    C -.-> I["Optional: MongoDB, Google sign-in,<br/>Gemini API"]

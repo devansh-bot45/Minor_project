@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant P as Phone browser
+    participant F as Flask backend
+    participant M as Keras model
+    participant D as SQLite
+    P->>P: Tap Start, motion permission (iOS)
+    P->>F: POST /api/sessions
+    F->>D: Insert session
+    loop Every 1.5 s (after the first 3 s)
+        P->>P: Collect samples at 20 Hz (50 ms timer)
+        P->>F: POST /api/predict (60 x 6, session id)
+        F->>M: Preprocessed 1 x 60 x 8 window
+        M->>F: 6 class probabilities
+        F->>F: Rules and session smoothing
+        F->>D: Insert prediction
+        F->>P: JSON prediction
+    end
+    P->>F: POST /api/sessions/{id}/end
+    P->>F: GET /api/sessions/{id} (History)
+    F->>D: Read session and predictions
+    F->>P: Timeline, CSV and PDF links

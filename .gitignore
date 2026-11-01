@@ -1,0 +1,78 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# ── Virtual environments / Config ─────────────────────────
+venv/
+env/
+.env/
+.venv/
+.env
+.env.local
+.env.*.local
+
+# ── Jupyter Notebooks ─────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE / Editor ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ── OS files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── ML model artifacts ──────────────────
+# (Allowing model files so API can load them in production)
+
+# ── Dataset (too large for git) ──────────────────────────
+code/data/
+code/wisdm-dataset/
+wisdm_data/
+wisdm.zip
+*.npy
+UCI HAR Dataset (1)/
+heterogeneity+activity+recognition/
+
+# ── Training outputs / Backups ───────────────────────────
+backend/confusion_matrix.png
+backend/report.txt
+backend/backup_model/
+backend/predictions_log.csv
+backend/data/
+
+# ── Node / React ──────────────────────────────────────────
+node_modules/
+.npm/
+*.local
+dist/
+
+# ── Logs ──────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Report drafts and reference documents (not part of the project) ──
+friend's_report.docx
+OLD_REPORT_VERSIONS/
+Project format - 2026.pdf
+*.pages
+~$*
+
+# ── Test caches / local model backups ────────────────────
+.pytest_cache/
+backend/model_backup_*/

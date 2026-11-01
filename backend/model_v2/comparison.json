@@ -1,0 +1,1585 @@
+{
+  "groups": {
+    "public_heldout_all": {
+      "v1": {
+        "n": 27352,
+        "accuracy": 0.3362,
+        "macro_f1_present_classes": 0.197,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5908
+          },
+          "Jogging": {
+            "precision": 0.053,
+            "recall": 0.393,
+            "f1": 0.093,
+            "support": 1181
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4893
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4571
+          },
+          "Still": {
+            "precision": 0.592,
+            "recall": 0.963,
+            "f1": 0.734,
+            "support": 7340
+          },
+          "Walking": {
+            "precision": 0.282,
+            "recall": 0.481,
+            "f1": 0.355,
+            "support": 3459
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              791,
+              0,
+              314,
+              4418,
+              385
+            ],
+            [
+              0,
+              464,
+              0,
+              1,
+              1,
+              715
+            ],
+            [
+              0,
+              3154,
+              0,
+              322,
+              444,
+              973
+            ],
+            [
+              0,
+              2430,
+              0,
+              0,
+              1,
+              2140
+            ],
+            [
+              0,
+              160,
+              0,
+              81,
+              7069,
+              30
+            ],
+            [
+              0,
+              1795,
+              0,
+              0,
+              0,
+              1664
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 27352,
+        "accuracy": 0.779,
+        "macro_f1_present_classes": 0.796,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.707,
+            "recall": 0.473,
+            "f1": 0.567,
+            "support": 5908
+          },
+          "Jogging": {
+            "precision": 0.888,
+            "recall": 0.886,
+            "f1": 0.887,
+            "support": 1181
+          },
+          "Sports": {
+            "precision": 0.798,
+            "recall": 0.772,
+            "f1": 0.785,
+            "support": 4893
+          },
+          "Stairs": {
+            "precision": 0.846,
+            "recall": 0.928,
+            "f1": 0.885,
+            "support": 4571
+          },
+          "Still": {
+            "precision": 0.711,
+            "recall": 0.895,
+            "f1": 0.793,
+            "support": 7340
+          },
+          "Walking": {
+            "precision": 0.889,
+            "recall": 0.833,
+            "f1": 0.86,
+            "support": 3459
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              2794,
+              9,
+              564,
+              33,
+              2489,
+              19
+            ],
+            [
+              16,
+              1046,
+              47,
+              33,
+              2,
+              37
+            ],
+            [
+              482,
+              39,
+              3776,
+              298,
+              172,
+              126
+            ],
+            [
+              8,
+              20,
+              128,
+              4240,
+              0,
+              175
+            ],
+            [
+              649,
+              3,
+              103,
+              11,
+              6571,
+              3
+            ],
+            [
+              3,
+              61,
+              114,
+              398,
+              2,
+              2881
+            ]
+          ]
+        }
+      }
+    },
+    "public_heldout_wisdm": {
+      "v1": {
+        "n": 15357,
+        "accuracy": 0.242,
+        "macro_f1_present_classes": 0.1792,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5908
+          },
+          "Jogging": {
+            "precision": 0.12,
+            "recall": 0.393,
+            "f1": 0.184,
+            "support": 1181
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3543
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1181
+          },
+          "Still": {
+            "precision": 0.313,
+            "recall": 0.899,
+            "f1": 0.464,
+            "support": 2363
+          },
+          "Walking": {
+            "precision": 0.275,
+            "recall": 0.954,
+            "f1": 0.427,
+            "support": 1181
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              791,
+              0,
+              314,
+              4418,
+              385
+            ],
+            [
+              0,
+              464,
+              0,
+              1,
+              1,
+              715
+            ],
+            [
+              0,
+              2134,
+              0,
+              228,
+              254,
+              927
+            ],
+            [
+              0,
+              269,
+              0,
+              0,
+              1,
+              911
+            ],
+            [
+              0,
+              146,
+              0,
+              62,
+              2125,
+              30
+            ],
+            [
+              0,
+              54,
+              0,
+              0,
+              0,
+              1127
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 15357,
+        "accuracy": 0.6348,
+        "macro_f1_present_classes": 0.6705,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.741,
+            "recall": 0.473,
+            "f1": 0.577,
+            "support": 5908
+          },
+          "Jogging": {
+            "precision": 0.889,
+            "recall": 0.886,
+            "f1": 0.888,
+            "support": 1181
+          },
+          "Sports": {
+            "precision": 0.729,
+            "recall": 0.717,
+            "f1": 0.723,
+            "support": 3543
+          },
+          "Stairs": {
+            "precision": 0.58,
+            "recall": 0.757,
+            "f1": 0.657,
+            "support": 1181
+          },
+          "Still": {
+            "precision": 0.4,
+            "recall": 0.751,
+            "f1": 0.522,
+            "support": 2363
+          },
+          "Walking": {
+            "precision": 0.734,
+            "recall": 0.593,
+            "f1": 0.656,
+            "support": 1181
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              2794,
+              9,
+              564,
+              33,
+              2489,
+              19
+            ],
+            [
+              16,
+              1046,
+              47,
+              33,
+              2,
+              37
+            ],
+            [
+              479,
+              37,
+              2541,
+              258,
+              165,
+              63
+            ],
+            [
+              8,
+              20,
+              127,
+              894,
+              0,
+              132
+            ],
+            [
+              469,
+              3,
+              103,
+              11,
+              1774,
+              3
+            ],
+            [
+              3,
+              61,
+              105,
+              312,
+              0,
+              700
+            ]
+          ]
+        }
+      }
+    },
+    "public_heldout_heterogeneity": {
+      "v1": {
+        "n": 9656,
+        "accuracy": 0.4379,
+        "macro_f1_present_classes": 0.3145,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1350
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2710
+          },
+          "Still": {
+            "precision": 0.951,
+            "recall": 1.0,
+            "f1": 0.975,
+            "support": 3710
+          },
+          "Walking": {
+            "precision": 0.291,
+            "recall": 0.275,
+            "f1": 0.283,
+            "support": 1886
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1020,
+              0,
+              94,
+              190,
+              46
+            ],
+            [
+              0,
+              1494,
+              0,
+              0,
+              0,
+              1216
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              3709,
+              0
+            ],
+            [
+              0,
+              1367,
+              0,
+              0,
+              0,
+              519
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 9656,
+        "accuracy": 0.9599,
+        "macro_f1_present_classes": 0.9642,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.993,
+            "recall": 0.915,
+            "f1": 0.952,
+            "support": 1350
+          },
+          "Stairs": {
+            "precision": 0.963,
+            "recall": 0.985,
+            "f1": 0.974,
+            "support": 2710
+          },
+          "Still": {
+            "precision": 0.997,
+            "recall": 0.957,
+            "f1": 0.977,
+            "support": 3710
+          },
+          "Walking": {
+            "precision": 0.947,
+            "recall": 0.961,
+            "f1": 0.954,
+            "support": 1886
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              1235,
+              40,
+              7,
+              63
+            ],
+            [
+              0,
+              0,
+              1,
+              2670,
+              0,
+              39
+            ],
+            [
+              159,
+              0,
+              0,
+              0,
+              3551,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              63,
+              2,
+              1813
+            ]
+          ]
+        }
+      }
+    },
+    "public_heldout_uci": {
+      "v1": {
+        "n": 2339,
+        "accuracy": 0.5357,
+        "macro_f1_present_classes": 0.3574,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 680
+          },
+          "Still": {
+            "precision": 1.0,
+            "recall": 0.975,
+            "f1": 0.987,
+            "support": 1267
+          },
+          "Walking": {
+            "precision": 0.581,
+            "recall": 0.046,
+            "f1": 0.085,
+            "support": 392
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              667,
+              0,
+              0,
+              0,
+              13
+            ],
+            [
+              0,
+              13,
+              0,
+              19,
+              1235,
+              0
+            ],
+            [
+              0,
+              374,
+              0,
+              0,
+              0,
+              18
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 2339,
+        "accuracy": 0.9791,
+        "macro_f1_present_classes": 0.9785,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.967,
+            "recall": 0.994,
+            "f1": 0.98,
+            "support": 680
+          },
+          "Still": {
+            "precision": 1.0,
+            "recall": 0.983,
+            "f1": 0.992,
+            "support": 1267
+          },
+          "Walking": {
+            "precision": 0.989,
+            "recall": 0.939,
+            "f1": 0.963,
+            "support": 392
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              676,
+              0,
+              4
+            ],
+            [
+              21,
+              0,
+              0,
+              0,
+              1246,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              23,
+              0,
+              368
+            ]
+          ]
+        }
+      }
+    },
+    "phone_heldout_stairs_session": {
+      "v1": {
+        "n": 117,
+        "accuracy": 0.0,
+        "macro_f1_present_classes": 0.0,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 117
+          },
+          "Still": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Walking": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              0,
+              5,
+              50
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 117,
+        "accuracy": 0.4615,
+        "macro_f1_present_classes": 0.6316,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 1.0,
+            "recall": 0.462,
+            "f1": 0.632,
+            "support": 117
+          },
+          "Still": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Walking": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              17,
+              54,
+              6,
+              30
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "phone_heldout_walking2": {
+      "v1": {
+        "n": 48,
+        "accuracy": 1.0,
+        "macro_f1_present_classes": 1.0,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Still": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 48
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              48
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 48,
+        "accuracy": 0.875,
+        "macro_f1_present_classes": 0.9333,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Still": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Walking": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.933,
+            "support": 48
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              4,
+              0,
+              42
+            ]
+          ]
+        }
+      }
+    },
+    "phone_seen_in_training": {
+      "v1": {
+        "n": 230,
+        "accuracy": 1.0,
+        "macro_f1_present_classes": 1.0,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 64
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Still": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 103
+          },
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 63
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              64,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              103,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              63
+            ]
+          ]
+        }
+      },
+      "v2": {
+        "n": 230,
+        "accuracy": 1.0,
+        "macro_f1_present_classes": 1.0,
+        "per_class": {
+          "Hand Activity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Jogging": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 64
+          },
+          "Sports": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Stairs": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Still": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 103
+          },
+          "Walking": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 63
+          }
+        },
+        "confusion": {
+          "labels": [
+            "Hand Activity",
+            "Jogging",
+            "Sports",
+            "Stairs",
+            "Still",
+            "Walking"
+          ],
+          "rows_true_cols_pred": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              64,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              103,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              63
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "pipeline_phone": {
+    "stairs1": {
+      "label": "Stairs",
+      "n": 63,
+      "v1": {
+        "accuracy": 0.0,
+        "predictions": {
+          "Jogging": 50,
+          "Uncertain": 6,
+          "Walking": 7
+        }
+      },
+      "v2": {
+        "accuracy": 0.8413,
+        "predictions": {
+          "Sports": 3,
+          "Stairs": 53,
+          "Uncertain": 7
+        }
+      }
+    },
+    "stairs2": {
+      "label": "Stairs",
+      "n": 54,
+      "v1": {
+        "accuracy": 0.0,
+        "predictions": {
+          "Jogging": 3,
+          "Still": 9,
+          "Uncertain": 6,
+          "Walking": 36
+        }
+      },
+      "v2": {
+        "accuracy": 0.1667,
+        "predictions": {
+          "Hand Activity": 5,
+          "Stairs": 9,
+          "Still": 5,
+          "Uncertain": 12,
+          "Walking": 23
+        }
+      }
+    },
+    "walking2": {
+      "label": "Walking",
+      "n": 48,
+      "v1": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Walking": 48
+        }
+      },
+      "v2": {
+        "accuracy": 0.8125,
+        "predictions": {
+          "Jogging": 5,
+          "Stairs": 4,
+          "Walking": 39
+        }
+      }
+    },
+    "still": {
+      "label": "Still",
+      "n": 103,
+      "v1": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Still": 103
+        }
+      },
+      "v2": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Still": 103
+        }
+      }
+    },
+    "jogging": {
+      "label": "Jogging",
+      "n": 64,
+      "v1": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Jogging": 64
+        }
+      },
+      "v2": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Jogging": 64
+        }
+      }
+    },
+    "walking1": {
+      "label": "Walking",
+      "n": 63,
+      "v1": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Walking": 63
+        }
+      },
+      "v2": {
+        "accuracy": 1.0,
+        "predictions": {
+          "Walking": 63
+        }
+      }
+    }
+  },
+  "models": {
+    "v1": {
+      "dir": ".",
+      "parameters": 840647,
+      "latency_ms_median_single_window": 19.45,
+      "latency_ms_p95_single_window": 20.59
+    },
+    "v2": {
+      "dir": "model_v2",
+      "parameters": 840647,
+      "latency_ms_median_single_window": 19.88,
+      "latency_ms_p95_single_window": 21.9
+    }
+  }
+}

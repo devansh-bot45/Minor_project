@@ -1,0 +1,248 @@
+{
+  "generated_at": "2026-10-28T05:07:57+00:00",
+  "classes": [
+    "Hand Activity",
+    "Jogging",
+    "Sports",
+    "Stairs",
+    "Still",
+    "Walking"
+  ],
+  "notes": [
+    "Windows: 60 samples at 20 Hz (resampled from the recording timestamps), 50% overlap; gaps > 1 s in a recording are skipped.",
+    "'model' = pure model argmax; 'pipeline' = model + rules + per-session smoothing (what the dashboard shows).",
+    "Recordings with used_in_training=true were part of the training data, so their scores are optimistic.",
+    "Model v2: trained by train_model_v2.py on windows from prepare_data_v2.py (WISDM, Heterogeneity and UCI HAR converted to phone units at 20 Hz, plus the still, jogging and walking1 phone recordings).",
+    "stairs1 and stairs2 are ONE stair-climbing session recorded on two devices at the same time, so they are not independent test data.",
+    "Results on public-dataset subjects that were never used for training: model_v2/comparison.md."
+  ],
+  "recordings": [
+    {
+      "file": "still data.csv",
+      "label": "Still",
+      "used_in_training": true,
+      "duration_sec": 157.05,
+      "windows": 103,
+      "model_distribution": {
+        "Still": 103
+      },
+      "pipeline_distribution": {
+        "Still": 103
+      },
+      "model_accuracy": 1.0,
+      "pipeline_accuracy": 1.0,
+      "legacy_model_accuracy": 0.9808
+    },
+    {
+      "file": "jogging.csv",
+      "label": "Jogging",
+      "used_in_training": true,
+      "duration_sec": 99.9,
+      "windows": 64,
+      "model_distribution": {
+        "Jogging": 64
+      },
+      "pipeline_distribution": {
+        "Jogging": 64
+      },
+      "model_accuracy": 1.0,
+      "pipeline_accuracy": 1.0,
+      "legacy_model_accuracy": 1.0
+    },
+    {
+      "file": "sensor_recording_20260426_162439.csv",
+      "label": "Walking",
+      "used_in_training": true,
+      "duration_sec": 97.25,
+      "windows": 63,
+      "model_distribution": {
+        "Walking": 63
+      },
+      "pipeline_distribution": {
+        "Walking": 63
+      },
+      "model_accuracy": 1.0,
+      "pipeline_accuracy": 1.0,
+      "legacy_model_accuracy": 1.0
+    },
+    {
+      "file": "sensor_recording_20260427_174501.csv",
+      "label": "Walking",
+      "used_in_training": false,
+      "duration_sec": 75.15,
+      "windows": 48,
+      "model_distribution": {
+        "Jogging": 1,
+        "Sports": 1,
+        "Stairs": 4,
+        "Walking": 42
+      },
+      "pipeline_distribution": {
+        "Jogging": 5,
+        "Stairs": 4,
+        "Walking": 39
+      },
+      "model_accuracy": 0.875,
+      "pipeline_accuracy": 0.8125,
+      "legacy_model_accuracy": 0.7917
+    },
+    {
+      "file": "sensor_recording_20260426_145530.csv",
+      "label": "Stairs",
+      "used_in_training": false,
+      "duration_sec": 96.55,
+      "windows": 63,
+      "model_distribution": {
+        "Hand Activity": 3,
+        "Jogging": 1,
+        "Sports": 15,
+        "Stairs": 39,
+        "Still": 1,
+        "Walking": 4
+      },
+      "pipeline_distribution": {
+        "Sports": 3,
+        "Stairs": 53,
+        "Uncertain": 7
+      },
+      "model_accuracy": 0.619,
+      "pipeline_accuracy": 0.8413,
+      "legacy_model_accuracy": 0.5938
+    },
+    {
+      "file": "sensor_recording_20260426_145547.csv",
+      "label": "Stairs",
+      "used_in_training": false,
+      "duration_sec": 83.7,
+      "windows": 54,
+      "model_distribution": {
+        "Hand Activity": 3,
+        "Jogging": 3,
+        "Sports": 2,
+        "Stairs": 15,
+        "Still": 5,
+        "Walking": 26
+      },
+      "pipeline_distribution": {
+        "Hand Activity": 5,
+        "Stairs": 9,
+        "Still": 5,
+        "Walking": 23,
+        "Uncertain": 12
+      },
+      "model_accuracy": 0.2778,
+      "pipeline_accuracy": 0.1667,
+      "legacy_model_accuracy": 0.2222
+    },
+    {
+      "file": "eating.csv",
+      "label": null,
+      "used_in_training": null,
+      "duration_sec": 99.0,
+      "windows": 62,
+      "model_distribution": {
+        "Hand Activity": 17,
+        "Jogging": 3,
+        "Sports": 17,
+        "Stairs": 6,
+        "Still": 19
+      },
+      "pipeline_distribution": {
+        "Hand Activity": 1,
+        "Sports": 8,
+        "Still": 20,
+        "Uncertain": 33
+      }
+    }
+  ],
+  "seen_in_training": {
+    "windows": 230,
+    "model_accuracy": 1.0,
+    "pipeline_accuracy": 1.0,
+    "confusion_matrix": {
+      "rows_true": [
+        "Jogging",
+        "Still",
+        "Walking"
+      ],
+      "cols_pred": [
+        "Hand Activity",
+        "Jogging",
+        "Sports",
+        "Stairs",
+        "Still",
+        "Walking",
+        "Uncertain"
+      ],
+      "pipeline": [
+        [
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          103,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          63,
+          0
+        ]
+      ]
+    }
+  },
+  "held_out": {
+    "windows": 165,
+    "model_accuracy": 0.5818,
+    "pipeline_accuracy": 0.6121,
+    "confusion_matrix": {
+      "rows_true": [
+        "Stairs",
+        "Walking"
+      ],
+      "cols_pred": [
+        "Hand Activity",
+        "Jogging",
+        "Sports",
+        "Stairs",
+        "Still",
+        "Walking",
+        "Uncertain"
+      ],
+      "pipeline": [
+        [
+          5,
+          0,
+          3,
+          62,
+          5,
+          23,
+          19
+        ],
+        [
+          0,
+          5,
+          0,
+          4,
+          0,
+          39,
+          0
+        ]
+      ]
+    }
+  }
+}

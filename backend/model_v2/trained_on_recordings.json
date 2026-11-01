@@ -1,0 +1,15 @@
+{
+  "used_in_training": {
+    "still": true,
+    "jogging": true,
+    "walking1": true,
+    "walking2": false,
+    "stairs1": false,
+    "stairs2": false
+  },
+  "notes": [
+    "Model v2: trained by train_model_v2.py on windows from prepare_data_v2.py (WISDM, Heterogeneity and UCI HAR converted to phone units at 20 Hz, plus the still, jogging and walking1 phone recordings).",
+    "stairs1 and stairs2 are ONE stair-climbing session recorded on two devices at the same time, so they are not independent test data.",
+    "Results on public-dataset subjects that were never used for training: model_v2/comparison.md."
+  ]
+}

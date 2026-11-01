@@ -1,0 +1,12 @@
+flowchart TD
+    A["UCI HAR, WISDM, Heterogeneity,<br/>phone CSV files"] --> B["Convert to m/s² and rad/s, align by time,<br/>resample to 20 Hz, cut 60-sample windows (step 30)"]
+    B --> D["Split by person and recording"]
+    D --> E["Training split"]
+    D --> F["Validation split"]
+    D --> G["Test split"]
+    E --> H["Cap per class and dataset, augment phone windows,<br/>preprocess to 60 x 8, fit scaler on training data only"]
+    H --> K["Train Conv1D + BiLSTM + attention"]
+    F --> K
+    K --> L["backend/model_v2"]
+    L --> M["compare_models.py: both models<br/>on the same test windows"]
+    G --> M

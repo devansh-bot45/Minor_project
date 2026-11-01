@@ -1,0 +1,50 @@
+{
+  "theme": "base",
+  "flowchart": {
+    "htmlLabels": true,
+    "useMaxWidth": false,
+    "nodeSpacing": 30,
+    "rankSpacing": 34,
+    "curve": "linear",
+    "padding": 10,
+    "wrappingWidth": 320
+  },
+  "sequence": {
+    "useMaxWidth": false,
+    "mirrorActors": false,
+    "actorMargin": 60,
+    "width": 120,
+    "boxMargin": 12,
+    "messageMargin": 38,
+    "boxTextMargin": 8,
+    "noteMargin": 12
+  },
+  "themeVariables": {
+    "fontFamily": "Times New Roman",
+    "fontSize": "16px",
+    "primaryColor": "#FFFFFF",
+    "primaryTextColor": "#000000",
+    "primaryBorderColor": "#000000",
+    "secondaryColor": "#F2F2F2",
+    "tertiaryColor": "#FFFFFF",
+    "lineColor": "#000000",
+    "textColor": "#000000",
+    "mainBkg": "#FFFFFF",
+    "nodeBorder": "#000000",
+    "clusterBkg": "#FFFFFF",
+    "edgeLabelBackground": "#FFFFFF",
+    "actorBkg": "#FFFFFF",
+    "actorBorder": "#000000",
+    "actorTextColor": "#000000",
+    "actorLineColor": "#000000",
+    "signalColor": "#000000",
+    "signalTextColor": "#000000",
+    "labelBoxBkgColor": "#FFFFFF",
+    "labelBoxBorderColor": "#000000",
+    "labelTextColor": "#000000",
+    "loopTextColor": "#000000",
+    "noteBkgColor": "#FFFFFF",
+    "noteBorderColor": "#000000"
+  },
+  "themeCSS": ".node rect, .node polygon, .node circle, .node path { stroke-width: 2px !important; } .flowchart-link, .edgePath .path { stroke-width: 2.6px !important; } .marker, marker path { stroke-width: 1.5px !important; fill: #000000 !important; stroke: #000000 !important; } .messageLine0, .messageLine1, .actor-line { stroke-width: 2.5px !important; } .nodeLabel, .edgeLabel, .label, .label *, span, p, text, tspan, .messageText, .actor, .loopText, .labelText, .noteText { font-weight: bold !important; } marker path { transform: scale(1.35); transform-box: fill-box; transform-origin: 30% 50%; }"
+}

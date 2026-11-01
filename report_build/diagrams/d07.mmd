@@ -1,0 +1,11 @@
+flowchart TD
+    A["Receive POST /api/predict<br/>with 60 x 6 sensor array"] --> B{"Valid 60 x 6<br/>finite numbers?"}
+    B -->|"No"| C["Return 400 error<br/>with message"]
+    B -->|"Yes"| D["Preprocess: 5 Hz low-pass, remove gravity,<br/>add magnitudes, normalise (60 x 8)"]
+    D --> L["Model prediction, temperature 1.5,<br/>session moving average"]
+    L --> I{"accel_var and gyro_var<br/>both < 0.12?"}
+    I -->|"Yes"| J["Still,<br/>confidence 1.0"]
+    I -->|"No"| K["Uncertain if max probability < 0.40;<br/>otherwise most probable class that is<br/>allowed at this motion intensity"]
+    J --> R["Majority vote over last 5 labels;<br/>store in SQLite if part of a session"]
+    K --> R
+    R --> V["Return JSON: activity, model_activity,<br/>confidence, rule, all_probs"]

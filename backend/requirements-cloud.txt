@@ -1,0 +1,8 @@
+# OPTIONAL: Google sign-in, MongoDB activity logs and Gemini AI reports (cloud_reports.py)
+-r requirements.txt
+pymongo
+PyJWT
+google-auth
+requests
+google-generativeai
+matplotlib

@@ -1,0 +1,7 @@
+graph LR
+    U["User<br/>(phone or laptop browser)"] -->|"Sensor windows<br/>CSV files"| S["HAR System"]
+    S -->|"Activity predictions<br/>timelines, exports"| U
+    S <-->|"Sessions<br/>Predictions"| DB["SQLite (local)"]
+    S <-.->|"Optional: users, logs, reports"| M["MongoDB"]
+    S <-.->|"Optional: sign-in"| G["Google OAuth"]
+    S <-.->|"Optional: report text"| AI["Gemini API"]

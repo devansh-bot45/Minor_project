@@ -1,0 +1,5 @@
+flowchart TD
+    A["Receive sensor data window (60 × 6)"] --> B["Validate input and preprocess<br/>(invalid → error 400;<br/>valid → 60 × 8 features)"]
+    B --> C["Model prediction<br/>(temperature scaling, session averaging)"]
+    C --> D["Post-processing:<br/>Still rule for very low motion;<br/>confidence and intensity checks;<br/>majority vote of last 5 labels"]
+    D --> E["Return and store activity prediction"]

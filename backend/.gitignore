@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Env
+.env
+.venv
+venv/
+env/
+
+# ML/Data (artifacts saved in backend)
+# (Keeping model and pkl files tracked for deployment)
+predictions_log.csv
+confusion_matrix.png
+report.txt
+
+# Local data
+data/

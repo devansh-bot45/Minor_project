@@ -1,0 +1,10 @@
+flowchart TD
+    A["Input 60 x 8"] --> B["Conv block 1: 2 x Conv1D(64) + BN,<br/>MaxPool, Dropout 0.15 -> 30 x 64"]
+    B --> C["Conv block 2: 2 x Conv1D(128) + BN,<br/>MaxPool, Dropout 0.2 -> 15 x 128"]
+    C --> D["Conv block 3: Conv1D(256) + BN,<br/>MaxPool, Dropout 0.2 -> 7 x 256"]
+    D --> E["BiLSTM(128), return sequences -> 7 x 256"]
+    E --> F["Temporal attention<br/>(softmax weights over 7 steps)"]
+    F --> G["BiLSTM(64) -> 128"]
+    G --> H["Dense(128) + BN + Dropout 0.3"]
+    H --> I["Dense(64) + BN + Dropout 0.2"]
+    I --> J["Dense(6), softmax"]

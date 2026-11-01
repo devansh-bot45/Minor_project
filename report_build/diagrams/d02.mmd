@@ -1,0 +1,7 @@
+flowchart TD
+    A["Raw window 60 x 6<br/>accel m/s² + gyro rad/s"] --> B["Butterworth low-pass<br/>5 Hz, order 3, zero-phase"]
+    B --> C["Accelerometer channels:<br/>0.3 Hz low-pass = gravity,<br/>body_accel = accel - gravity"]
+    B --> E["Gyroscope channels"]
+    C --> H["Feature window 60 x 8:<br/>body_accel, gyro, |body_accel|, |gyro|"]
+    E --> H
+    H --> I["StandardScaler"]

@@ -1,0 +1,8 @@
+flowchart TD
+    A["Public datasets and phone recordings<br/>(WISDM, UCI HAR, Heterogeneity)"] --> B["Convert units and resample to 20 Hz"]
+    B --> C["Cut 3-second windows<br/>(60 samples, step 30)"]
+    C --> D["Split by person and recording<br/>(training / validation / test)"]
+    D --> E["Cap classes and augment<br/>phone training windows"]
+    E --> F["Preprocess windows (60 × 8)<br/>and fit scaler on training data"]
+    F --> G["Train Conv1D + BiLSTM + attention model"]
+    G --> H["Evaluate on held-out test split"]
