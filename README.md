@@ -260,7 +260,4 @@ accordingly). `prepare_data.py` / `train_model.py` are kept unchanged as the rec
 - Time per activity is estimated as 1.5 s per prediction window.
 - Not a medical device; predictions can be wrong.
 
-## Contributors
 
-- Vansh Tambi
-- Vivek Pasi
